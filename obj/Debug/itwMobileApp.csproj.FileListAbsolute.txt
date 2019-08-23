@@ -1,0 +1,49 @@
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\itwMobileApp.dll.config
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\itwMobileApp.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\itwMobileApp.pdb
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\Antlr3.Runtime.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\Newtonsoft.Json.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\System.Web.Optimization.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\WebActivator.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\WebGrease.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\Antlr3.Runtime.pdb
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\Newtonsoft.Json.xml
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\bin\System.Web.Optimization.xml
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\obj\Debug\itwMobileApp.csprojResolveAssemblyReference.cache
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\obj\Debug\itwMobileApp.dll
+C:\Users\Joaquim Sousa Pinto\documents\visual studio 2013\Projects\ITW-Projeto 1\itwMobileApp\obj\Debug\itwMobileApp.pdb
+\\Mac\Home\Downloads\itwMobileApp\bin\itwMobileApp.dll.config
+\\Mac\Home\Downloads\itwMobileApp\bin\itwMobileApp.dll
+\\Mac\Home\Downloads\itwMobileApp\bin\itwMobileApp.pdb
+\\Mac\Home\Downloads\itwMobileApp\bin\Antlr3.Runtime.pdb
+\\Mac\Home\Downloads\itwMobileApp\bin\Newtonsoft.Json.xml
+\\Mac\Home\Downloads\itwMobileApp\bin\System.Web.Optimization.xml
+\\Mac\Home\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csproj.CopyComplete
+\\Mac\Home\Downloads\itwMobileApp\obj\Debug\itwMobileApp.dll
+\\Mac\Home\Downloads\itwMobileApp\obj\Debug\itwMobileApp.pdb
+Z:\Downloads\itwMobileApp\bin\itwMobileApp.dll.config
+Z:\Downloads\itwMobileApp\bin\itwMobileApp.dll
+Z:\Downloads\itwMobileApp\bin\itwMobileApp.pdb
+Z:\Downloads\itwMobileApp\bin\Newtonsoft.Json.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.Helpers.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.Mvc.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.Razor.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.Deployment.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.dll
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.Razor.dll
+Z:\Downloads\itwMobileApp\bin\Newtonsoft.Json.pdb
+Z:\Downloads\itwMobileApp\bin\Newtonsoft.Json.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.Helpers.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.Mvc.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.Razor.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.Deployment.xml
+Z:\Downloads\itwMobileApp\bin\System.Web.WebPages.Razor.xml
+Z:\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csproj.CoreCompileInputs.cache
+Z:\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csproj.CopyComplete
+Z:\Downloads\itwMobileApp\obj\Debug\itwMobileApp.dll
+Z:\Downloads\itwMobileApp\obj\Debug\itwMobileApp.pdb
+Z:\Downloads\itwMobileApp\obj\Debug\itwMobileApp.csprojAssemblyReference.cache

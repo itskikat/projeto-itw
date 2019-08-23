@@ -1,0 +1,51 @@
+﻿<section>
+    <div class="page-header">
+        <h2 style="padding: 20px;" data-bind="text:className"></h2>
+    </div>
+        <div class="ProcuraporTecla"><input type="text" id="LaureateN" class="form-control" data-bind="textInput: searchText, event: {keyup: searchPrizes}"
+            aria-describedby="basic-addon1" placeholder="Procurar (por nome, categoria, ano...)" /></div>
+        <br>
+        <div class="dropdown" style="text-align: right;">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filtrar por categorias
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+                <a class="dropdown-item" data-bind="click: filterChem" id="Chemistry">Chemistry</a>
+                <a class="dropdown-item" data-bind="click: filterLit" id="Literature">Literature</a>
+                <a class="dropdown-item" data-bind="click: filterMed" id="Medicine">Medicine</a>
+                <a class="dropdown-item" data-bind="click: filterPea" id="Peace">Peace</a>
+                <a class="dropdown-item" data-bind="click: filterPhy" id="Physics">Physics</a>
+            </div>
+        </div>
+        <br>
+        <table class="table table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th style="text-align: justify" scope="col">Título</th>
+                    <th style="text-align: center" scope="col">Categoria</th>
+                    <th style="text-align: center" scope="col">Ano</th>
+                    <th style="text-align: center" scope="col">+Info</th>
+                </tr>
+            </thead>
+            <tbody id="table" data-bind="foreach: prizes">
+            <tr>
+                <td style="text-align: justify" data-bind="text: parseName(Titulo)"></td>
+                <td style="text-align: center" data-bind="text: Categoria.Nome"></td>
+                <td style="text-align: center" data-bind="text: Ano"></td>
+                <td style="text-align: center">
+                    <a data-bind="attr:{ href: '#prizesDetails/'+PremioNobelId, title: Titulo}"><i class="fas fa-award"></i></a>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container" style="text-align: right">
+        <button type="button" class="btn btn-outline-info" data-bind="click: previousPage, enable: countPrevious"><i class="fas fa-arrow-left"></i> Previous Page</button>
+        <button type="button" class="btn btn-outline-info" data-bind="click: nextPage, enable: countNext" style="margin-left: 15px;">
+            Next Page <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <br>
+    <br>
+</section>

@@ -1,0 +1,65 @@
+<section>
+    <div data-bind="with:laureateDetails">
+        <div class="page-header">
+            <!--
+            <h2 style="padding: 20px;" data-bind="text: $parent.displayName"></h2>
+            <hr>
+            -->
+            <h2 style="padding-bottom: 20px; padding-top: 20px;" data-bind="text: Nome" class="font-weight-bold"></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Informações biográficas</h4>
+                <dl class="dl-horizontal">
+                    <dt>Data de Nascimento</dt><dd data-bind="text: parseDate(DataNascimento)"></dd>
+                    <dt>Cidade de Nascimento:</dt><dd data-bind="text: CidadeNascimento.Nome + ' (' + CidadeNascimento.Pais.Nome + ')'"></dd>
+                    <!-- Mapa Cidade/Pais Nascimento -->
+                    <dt></dt><dd><button type="button" class="btn btn-info btn-sm" data-bind="click: birthMap">Ver Mapa</button></dd>
+                    <iframe hidden id="mapaN" data-bind="html:Nome, attr:{src:'https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q='+CidadeNascimento.Pais.Nome + ' (' + CidadeNascimento.Nome + ')'}"></iframe> 
+                    <!-- ko if:DataMorte != null -->
+                    <dt>Data de Morte</dt><dd data-bind="text: parseDate(DataMorte)"></dd>
+                    <!-- /ko -->
+                    <!-- ko if:CidadeMorte != null -->
+                    <dt>Cidade de Morte:</dt><dd data-bind="text: CidadeMorte.Nome + ' (' + CidadeMorte.Pais.Nome + ')'"></dd>
+
+                    <!-- Mapa Cidade/Pais Morte -->
+                    <dt></dt><dd><button type="button" class="btn btn-info btn-sm" data-bind="click: deathMap">Ver Mapa</button></dd>
+                    <iframe hidden id="mapaM" data-bind="html:Nome, attr:{src:'https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q='+CidadeMorte.Pais.Nome + ' (' + CidadeMorte.Nome + ')'}"></iframe> 
+                    <!-- /ko -->
+                </dl>
+                <hr />
+                <h4>Prémios</h4>
+                <div data-bind="foreach : PremioNobel">
+                    <dl class="dl-horizontal">
+                        <dt>Ano</dt><dd data-bind="text : Ano"></dd>
+                        <dt>Categoria</dt><dd data-bind="text : Categoria.Nome"></dd>
+                        <div>
+                            <dt>Titulo</dt>
+                            <dd data-bind="text : parseName(Titulo)"></dd>
+                            <a class="text-monospace" data-bind="attr:{ href: '#prizesDetails/'+PremioNobelId, title: Titulo}" role="button">+ Info</a>
+                        </div>
+                        <dt>Motivo de premiação</dt><dd data-bind="html: Motivacao"></dd>
+                    </dl>
+                    <!-- ko ifnot : $index() == $parent.PremioNobel.length-1 -->
+                    <hr />
+                    <!-- /ko -->
+                </div>
+
+                <!-- ko if : Filiacao.length != 0 -->
+                <hr />
+                <h4>Filiação</h4>
+                <!-- ko foreach : Filiacao -->
+                <dl class="dl-horizontal">
+                    <dt>Instituição</dt>
+                    <dd><span data-bind="text:Nome"></span> - <span data-bind="text: Cidade.Nome"></span>(<span data-bind="text:Cidade.Pais.Nome"></span>)</dd>
+                </dl>
+                <!-- /ko -->
+                <!-- /ko -->
+            </div>
+            <div class="col-md-4">
+                <img data-bind="attr:{ src: Picture}" class="img-thumbnail"
+                     onerror="this.src='/images/emptyPerson.jpg'" />
+            </div>
+        </div>
+    </div>
+</section>

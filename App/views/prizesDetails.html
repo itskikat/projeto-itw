@@ -1,0 +1,25 @@
+ <section>
+    <div data-bind="with:prizesDetails">
+        <div class="page-header">
+            <h2 style="padding-bottom: 20px; padding-top: 20px;" data-bind="text: parseName(Titulo)" class="font-weight-bold"></h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <dl class="dl-horizontal">
+                    <dt>Ano</dt><dd data-bind="text: Ano"></dd>
+                    <dt>Categoria</dt>
+                    <dd data-bind="text: Categoria.Nome">
+                        <a data-bind="attr:{ href: '#categoriaDetails/'+Categoria.CategoriaId, title: Nome}"></a>
+                    </dd>
+                    <dt>Motivo de premiação</dt><dd data-bind="text: Motivacao"></dd>
+                </dl>
+                <hr />
+                <h4>Laureados</h4>
+                <ol type="none" data-bind="foreach: Individuo">
+                    <li><a data-bind="html:Nome, attr:{ href: '#laureateDetails/'+LaureadoId, title: Nome}"></a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>

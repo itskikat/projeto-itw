@@ -1,0 +1,62 @@
+﻿<section>
+    <div class="page-header">
+        <h2 style="padding: 20px;" data-bind="text:className"></h2>
+    </div>
+    <div class="ProcuraporTecla"><input type="text" id="LaureateN" class="form-control" data-bind="textInput: searchText, event: {keyup: searchLaureates}" aria-describedby="basic-addon1" placeholder="Pesquisa por Laureado" /></div>
+    <br>
+    <div class="input-group mb-3">
+        <input id="scidade" type="text" class="form-control" placeholder="Pesquisa por Cidade" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append" >
+            <button data-bind="click:filterCity" class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input id="spais" type="text" class="form-control" placeholder="Pesquisa por Pais" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append" >
+            <button data-bind="click:filterpais" class="btn btn-outline-secondary" type="button" id="button-addon">Pesquisar </button>
+        </div>
+    </div>
+    <div class="dropdown" style="text-align: right;">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sexo
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+                <a class="dropdown-item" data-bind="click: filterF" id="F">Feminino</a>
+                <a class="dropdown-item" data-bind="click: filterM" id="M">Masculino</a>
+            </div>
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th style="text-align: justify" scope="col">Nome</th>
+                    <th style="text-align: center" scope="col">Data de Nascimento</th>
+                    <th style="text-align: center" scope="col">Data de Morte</th>
+                    <th style="text-align: center" scope="col">Sexo</th>
+                    <th style="text-align: center" scope="col">+Info</th>
+                </tr>
+            </thead>
+            <tbody id="table" data-bind="foreach: laureates">
+            <tr>
+                <td style="text-align: justify" data-bind="text: Nome"></td>
+                <td style="text-align: center" data-bind="text: parseDate(DataNascimento)"></td>
+                <td style="text-align: center" data-bind="text: parseDate(DataMorte)"></td>
+                <td style="text-align: center" data-bind="text: Sexo"></td>
+                <td style="text-align: center">
+                    <a data-bind="attr:{ href: '#laureateDetails/'+LaureadoId, title: Nome}"><i class="fas fa-user-alt"></i></a>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container" style="text-align: right">
+        <button type="button" class="btn btn-outline-info" data-bind="click: previousPage, enable: countPrevious"><i class="fas fa-arrow-left"></i> Previous Page</button>
+        <button type="button" class="btn btn-outline-info" data-bind="click: nextPage, enable: countNext" style="margin-left: 15px;">
+            Next Page <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <br>
+    <br>
+</section>

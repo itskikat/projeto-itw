@@ -1,0 +1,150 @@
+﻿<style>
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
+
+
+
+#timer{
+    font-family: 'Titillium Web', cursive;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+
+  font-weight: 100;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 80px;
+
+
+}
+
+
+#span_color {
+  font-family: "Goudy Old Style";
+  display: inline-block;
+  font-size: 30px;
+  color: black;
+}
+.faltam{
+    font-family: "Goudy Old Style";
+    width: 100%;
+    height: 30px;
+    font-size: 60px;
+
+
+  text-align: center;
+  color: black;
+
+}
+.faltamm{
+    font-family: "Goudy Old Style";
+    width: 100%;
+    height: 30px;
+    font-size: 40px;
+
+
+  text-align: center;
+  color: black;
+
+}
+
+#days {
+  font-size: 80px;
+  color: #db4844;
+}
+#hours {
+  font-size: 80px;
+  color: dodgerblue;
+}
+#minutes {
+  font-size: 80px;
+  color: gold;
+}
+#seconds {
+  font-size: 80px;
+  color: darkorange;
+}
+
+
+section {
+    border-image-source: url("https://www.underconsideration.com/brandnew/archives/the_nobel_prize_medal_to_logo.jpg");
+
+
+}
+</style>
+<section id="#section">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" style="heigth: 500px">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" style="height: 650px; widt" src="Content\images\carousel1.jpeg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="font-size: 70px;"  >Pesquisa por Laureados</div>
+                    <p style="font-size: x-large">Onde encontrará todos os Laureados</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#Laureados" style="font-family: sans-serif;">Saber mais</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height: 650px; width: 100%" src="Content\images\carousel2.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="font-size: 70px;"  >Pesquisa por Prémio</div>
+                    <p style="font-size: x-large">Onde encontrará todos os Prémios Nobel</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#Premios" style="font-family: sans-serif;">Saber mais</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height: 650px; width: 100%" src="Content\images\carousel3.jpeg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="font-size: 70px;"  >Curiosidades</div>
+                    <p style="font-size: x-large">Algumas curiosidades dos Prémios Nobel</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#curiosidades" style="font-family: sans-serif;">Saber mais</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height: 650px; width: 100%" src="Content\images\carousel4.jpg" alt="Forth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <div style="font-size: 70px;"  >Quiz</div>
+                    <p style="font-size: x-large">Teste os seus conhecimentos sobre os Prémio Nobel!</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#quiz" style="font-family: sans-serif;">Saber mais</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+    <div class="faltam">Faltam:</div>
+    <br>
+    <br>
+    <div id="timer">
+      <span id="days"></span>
+      <span id="hours"></span>
+      <span id="minutes"></span>
+      <span id="seconds"></span>
+    </div>
+    <br>
+    <br>
+    <div class="faltamm">Para a entrega dos próximos Prémios Nobel</div>
+</section>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ITW App</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="icon2.png" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="Content/durandal.css" rel="stylesheet" />
+    <link href="Content/myApp.css" rel="stylesheet" />
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <style>
+    /* footer */
+.footer-basic-centered{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 45px;
+  margin-top: 80px;
+}
+
+.footer-basic-centered .footer-name{
+  color:  #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="loading_page"><img src="images/testarr.jpg"/></div>
+    <div id="applicationHost"></div>
+    <footer class="footer-basic-centered">
+        <hr>
+        <p class="footer-name">&copy; ITW 2018</p>
+        <br>
+        <p class="footer-name" style="color: #8f9296; font-size: 14px;">92951 Alexandre Rodrigues / 93102 Francisca Barros</p>
+    </footer>
+    <script src="cordova.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/knockout-3.4.2.js"></script>
+    <script src="Scripts/require.js" data-main="App/main"></script>
+    <script src="Scripts/moment.js"></script>
+</body>
+</html>
+<style>
+   /*#applicationHost {
+       display: none;
+   }
+*/
+
+    #loading_page {
+        background-color: white;
+        width: auto;
+        height: auto;
+        align-content: center;
+        position: absolute;
+
+
+    }
+
+</style>
+<script>
+    $().ready(function () {
+        $("#loading_page").fadeOut("slow");
+        $("#applicationHost").style.display = "block";
+    });
+</script>

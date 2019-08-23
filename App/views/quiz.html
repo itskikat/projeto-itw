@@ -1,0 +1,143 @@
+<style>
+a {
+        color: yellow;
+    }
+    a:visited {
+        color: yellow;
+    }
+    a.morelink {
+        text-decoration:none;
+        outline: none;
+    }
+    .morecontent span {
+        display: none;
+    }
+    .comment {
+        width: 250px;
+
+        margin: 10px;
+    }
+
+
+     h1 {
+
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        font-family:sans-serif;
+
+    }
+    input[type=radio] {
+        border-image-source: -webkit-repeating-linear-gradient(crimson);
+        border-radius: inherit;
+        border: 10px;
+        width: 20px;
+        height: 1.8em;
+        position: relative;
+        top:15px;
+        right:10px;
+         background-color: #eee;
+        border-image-slice: unset;
+        cursor: pointer;
+
+
+    }
+
+
+
+    /* Quiz Classes */
+     .quizContainer {
+        background-color: #fffcf9;
+        width: 100%;
+        border-style:  solid ;
+        height: 20%;
+        position: relative;
+    }
+
+    .proxima_questao {
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        background-color: lightgrey;
+        /*clear: both;*/
+        color: #993300;
+         font-family:sans-serif;
+
+        position: relative;
+        left: 10px;
+        border-radius: 3px;
+        padding-top: 10px;
+        font-size: 16px;
+        cursor: pointer;
+
+
+      -webkit-transition-duration: 1.4s; /* Safari */
+      transition-duration: 0.4s;
+
+
+
+    }
+    .proxima_questao:hover{
+        background-color: #FFD700;
+        opacity: 2}
+    .question {
+
+        font-size: 1.8em;
+        width: 100%;
+         font-family:sans-serif;
+
+
+        background-color: lightgrey;
+        text-align: center;
+
+    }
+
+    .seleciona {
+        border-radius: 0px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 2px;
+        font-size: 120%;
+        font-family:sans-serif;
+        color: red;
+        -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+    }
+    .choiceList {
+        font-size: 30px;
+        color: #993300;
+        font-family:sans-serif;
+        position: relative;
+        left: 5px;
+        -webkit-transition-duration: 1.4s; /* Safari */
+      transition-duration: 0.4s;
+
+
+    }
+
+</style>
+<section>
+    <div class="page-header">
+        <h1 style="padding: 20px;">Teste os seus conhecimentos! <i class="far fa-lightbulb"></i></h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="quizContainer">
+            <div class="question"></div>
+            <br>
+
+            <ul class="choiceList"></ul>
+            <div class="seleciona"></div>
+            <div class="result"></div>
+            <br>
+            <div class="proxima_questao" >Next Question <i class="fas fa-arrow-right"></i></div>
+            <br>
+        </div>
+    </div>
+
+</section>
